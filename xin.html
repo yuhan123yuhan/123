@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ffdaf9;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #期待 {
+            height: 20px;
+            width: 20px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+        }
+
+        #mainImage {
+            width: 100%;
+            max-width: 200px;
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            font-size: 5vw;
+            color: #68495b;
+            margin: 20px 0;
+        }
+
+        button {
+            font-size: 4vw;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+
+        #yes {
+            background-color: #d26b6b;
+            color: white;
+        }
+
+        #no {
+            background-color: #6784b1;
+            color: white;
+            position: relative;
+        }
+
+        #backToFirst {
+            background-color: #999;
+            color: white;
+            display: none;
+        }
+
+        .yes-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffdaf9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .yes-text {
+            font-size: 7vw;
+        }
+
+        .yes-image {
+            width: 50%;
+            max-width: 300px;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                display: block;
+            }
+
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: auto;
+                max-width: none;
+            }
+
+            #mainImage {
+                width: 200px;
+            }
+
+            h1 {
+                font-size: 28px;
+                margin: 20px 0;
+            }
+
+            button {
+                font-size: 18px;
+            }
+
+            .yes-text {
+                font-size: 36px;
+            }
+
+            .yes-image {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img id="mainImage" src="https://k.sinaimg.cn/n/sinacn10111/580/w690h690/20191103/e496-ihuuxuu2717254.jpg/w700d1q75cms.jpg" alt="爱心">
+        <div id="question"><img id="期待" src="https://picx.zhimg.com/50/v2-f6774d261eb00c41ea836d293d2774e1_720w.gif?source=1def8aca" alt="期待">可不可以一直做搭档?</div>
+        <div id="button">
+            <button id="yes">当然可以啊~</button>
+            <button id="no">不可以！</button>
+            <button id="backToFirst">返回第一个问题</button>
+        </div>
+    </div>
+    <script src="xin.js"></script>
+</body>
+
+</html>
