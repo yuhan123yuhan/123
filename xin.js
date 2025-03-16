@@ -42,18 +42,18 @@ noButton.addEventListener("click", function () {
 yesButton.addEventListener("click", function () {
     switch (questionStage) {
         case 1:
-            questionText.innerHTML = '<img id="期待" src="https://picx.zhimg.com/50/v2-f6774d261eb00c41ea836d293d2774e1_720w.gif?source=1def8aca" alt="期待">可不可以一直喜欢我';
+            questionText.innerHTML = '<img id="期待" src="https://picx.zhimg.com/50/v2-f6774d261eb00c41ea836d293d2774e1_720w.gif?source=1def8aca" alt="期待">确定一直做搭档下去而不是手滑？';
             resetUI();
             questionStage = 2;
             break;
         case 2:
-            questionText.innerHTML = '<img id="期待" src="https://picx.zhimg.com/50/v2-f6774d261eb00c41ea836d293d2774e1_720w.gif?source=1def8aca" alt="期待">那你可不可以一直这样';
+            questionText.innerHTML = '<img id="期待" src="https://picx.zhimg.com/50/v2-f6774d261eb00c41ea836d293d2774e1_720w.gif?source=1def8aca" alt="期待">搭档几天没联系你，你会主动联系他嘛？';
             resetUI();
             questionStage = 3;
             backToFirstButton.style.display = 'inline-block';
             break;
         case 3:
-            questionText.innerHTML = '<img id="期待" src="https://picx.zhimg.com/50/v2-f6774d261eb00c41ea836d293d2774e1_720w.gif?source=1def8aca" alt="期待">可不可以天天这样';
+            questionText.innerHTML = '<img id="期待" src="https://picx.zhimg.com/50/v2-f6774d261eb00c41ea836d293d2774e1_720w.gif?source=1def8aca" alt="期待">看到什么有趣好玩的会分享给搭档嘛';
             resetUI();
             questionStage = 4;
             backToFirstButton.style.display = 'none';
